@@ -1,0 +1,264 @@
+body {
+	margin: 0;
+	font-family: Roboto, sans-serif;
+	background-image: url(./images/BlackWallpaperTexture.jpg);	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-inline-start: 0px;
+}
+
+.container {
+    @media screen and (max-width: 479px) {
+        padding: 0 10px;
+    }
+    @media screen and (min-width: 480px) {
+        padding: 0 25px;
+    }	
+}
+
+.header {
+    @media screen and (max-width: 479px) {
+        position: relative;
+        border-bottom: 1px solid #cecb0b;
+    }
+
+    @media screen and (min-width: 480px) {
+        position: relative;
+        border-bottom: 2px solid #cecb0b
+    }
+}
+
+.nav{
+    @media screen and (max-width: 479px) {
+        height: 320px;
+    }
+
+    @media screen and (min-width: 480px) {
+        margin:0;
+        height: 120px;   
+    }
+}
+
+.nav-list {
+    @media screen and (max-width: 479px) {
+		display: block;
+		padding-top: 40px;
+        text-align: center;
+	}
+
+    @media screen and (min-width: 480px) {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	height: 120px;
+}
+}
+.nav-item {
+	font-size: 25px;
+}
+.nav-item:hover{
+    color:#cecb0b;
+    scale:1.1;
+}
+
+.icon {
+	fill: white;
+}
+
+.icon-burger{
+    fill:#cecb0b;
+}
+
+.link{
+    position: relative;
+    color:white;
+    height: 120px;   
+}
+
+.link:hover{
+    color:#cecb0b;
+}
+
+.link.current {
+	position: relative;
+
+	color: #cecb0b}
+.link.current::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		left: 0;
+		bottom:-49px;
+		border-radius: 2px;
+		background-color: white;
+	}
+
+.link.logo{
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    color:#cecb0b
+} 
+.main{
+    @media screen and (max-width: 479px) {
+        margin-top: 20px;
+    }
+    @media screen and (min-width: 480px) {
+        display: flex;
+    margin-top: 30px;
+    }
+    
+}
+.section__left{
+    @media screen and (max-width: 479px) {
+        text-align: center;
+        margin-top: 20px;
+    }
+    @media screen and (min-width: 480px) {
+        width: 30%;
+        margin-top: 30px;
+    }
+}
+
+.icon__wrapper{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.section__left-title{
+    margin:0 0 30px 0;
+    color:#cecb0b;
+font-size: 36px;
+}
+.section__left-text{
+    margin:0 0 30px 0;
+    color:white;
+    font-size: 24px;  
+}
+.section__left-button {
+    background-color: #cecb0b;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    
+  }
+  .section__left-button:hover {
+    transform: scale(1.1);
+  }
+
+  .section__central{
+    @media screen and (max-width: 479px) {
+        position: relative;
+        text-align: center;
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 480px) {
+        position: relative;
+        width: 40%;
+    }
+  }
+
+  .section__central-title{
+    color: #cecb0b;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .image__container{
+    height: 400px;
+  }
+
+  img {
+	display: block;
+	max-width: 100%;
+	height: 400px;
+    margin: 0 auto;
+}
+
+.section__central-decor1{
+    position: absolute;
+    top:200px;
+    left:20px;
+}
+
+.section__central-decor2{
+    position: absolute;
+    top:150px;
+    right:20px;
+}
+.section__central-decor3{
+    position: absolute;
+    bottom:0px;
+    left:20px;
+}
+.section__central-decor4{
+    position: absolute;
+    bottom:50px;
+    right:20px;
+}
+
+.icon__decor{
+    fill:#cecb0b;
+}
+
+.section__right{
+    @media screen and (max-width: 479px) {
+        text-align: center;
+        margin-top: 20px;
+    }
+    @media screen and (min-width: 480px) {
+        width: 30%;
+        margin-top: 30px;
+        text-align: right;
+    }
+
+}
+
+.section__right-title{
+    margin:0 0 30px 0;
+    color:#cecb0b;
+font-size: 36px;
+}
+
+.section__right-text{
+    margin:0 0 30px 0;
+    color:white;
+    font-size: 24px;  
+}
+
+.section__right-button {
+    background-color: #cecb0b;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .section__right-button:hover {
+    transform: scale(1.1);
+  }
